@@ -4,6 +4,14 @@
 		<title>First Task</title>
 		 <link rel="stylesheet" type="text/css" href="style.css">
         <script src="jquery-3.2.1.min.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112309011-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-112309011-1');
+		</script>
 
 	</head>
 <script>
@@ -53,6 +61,10 @@ $(document).ready(function(){
 
 		  	<p>
 De los tópicos me siento muy familiarizado en xml, y en json. SIn embargo no me siento muy familiarizado en nada de frameworks, me siento regular en html y css. En backend me siento muy alejado, ya que llevo mucho tiempo sin hacer algo que involucre eso. De los servicios web solo me siento bien con cloud, lo demás la verdad no los conozco.</p>
+    <h3>
+		<STRONG> Liga de proyecto: https://vlad04.github.io/APLICACIONES-WEB/First-Task/PROYECTO/ </STRONG></br>
+	</h3>
+    
     <button id="hide">Hide</button>
     <button id="show">Show</button>
 
