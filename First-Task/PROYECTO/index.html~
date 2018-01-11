@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>First Task</title>
+		 <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery-3.2.1.min.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112309011-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-112309011-1');
+		</script>
+
+	</head>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide(1000);
+    });
+    $("#show").click(function(){
+        $("p").show(1000);
+    });
+});
+</script>
+	<body>
+	<h2>
+		<STRONG> Vladimir Rodriguez Bahena A01129975 </STRONG> </br>
+    </h2>
+    
+    <h2>
+		<STRONG> Rafael  López Peña A01630163 </STRONG> </br>
+    </h2>
+    
+    <h2>
+		<STRONG> Alan Roberto Alvarez Vazquez A01630612 </STRONG> </br>
+    </h2>
+    
+    <h2>
+		<STRONG> Juan Antonio Olvera Robles A01630359 </STRONG> </br>
+    </h2>
+    
+    
+    <h1>
+		<STRONG> FIT STYLE </STRONG> </br>
+    </h1>
+			<p> 
+				Nuestro proyecto es una aplicación web que ayude al usuario a llevar a cabo una vida saludable, recibiendo varios parametros del usuario para poder obtener los resultados de indice de masa corporal, necesidades y crear una dieta balanceada especifica para ese usuario, además de una rutina de ejercicio específica para el usuario, posiblemente podamos implementar un mapa en donde podamos reocmendar un gimnasio cercano al usuario o mercados o restaurantes nutritivos donde conseguir sus alimentos, además de una alarma para poder comer a las horas indicadas, incluyendo entremeces y otras cosas.
+			</p>
+			<img src="https://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/dumbbells-equipment-7-tips-gym.jpg?itok=upi_7_0X" alt="gym" width="200" height="200">
+			<img src="https://dietas.guiafitness.com/wp-content/uploads/sites/8/dieta-disociada.gif" alt="dieta" width="200" height="200">
+			<img src="https://estaticos.muyinteresante.es/uploads/images/article/5874aa9a5bafe817bb92d7a4/deporte_0.jpg" alt="dieta" width="200" height="200">
+			<img src="https://dietas.guiafitness.com/wp-content/uploads/sites/8/dieta-proteica1.gif" alt="dieta" width="200" height="200">
+			<img src="http://cdn2.salud180.com/sites/default/files/styles/gallerie/public/gallerie/2016/7/cambio_ejercicio_111.jpg" alt="dieta" width="200" height="200">
+			<img src="https://s1.cdnpym.es/aptavs.com/contenido/imagenes/que-es-la-nutricion-definicion-importancia_1100x500.jpg" alt="dieta" width="200" height="200">
+
+    <p></p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+	</body>
+	
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCQy5WPgh5ae7WE_BgoEI3rhJkjygQLhps",
+    authDomain: "first-task-485b2.firebaseapp.com",
+    databaseURL: "https://first-task-485b2.firebaseio.com",
+    projectId: "first-task-485b2",
+    storageBucket: "",
+    messagingSenderId: "522389566180"
+  };
+  firebase.initializeApp(config);
+</script>

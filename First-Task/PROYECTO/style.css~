@@ -3,14 +3,18 @@ h3 {
   color: #BDBDBD;
   text-align: center 
 }
+h1  {
+    color: #BDBDBD;
+  text-align: center 
+}
 body {
     background-color: #0B614B;
 
 }
 
 p   {
+  text-align: justify; 
     color:#FFFFFF
-      text-align: justify; 
 }
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
