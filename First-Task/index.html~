@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>First Task</title>
+		 <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery-3.2.1.min.js"></script>
+
+	</head>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide(1000);
+    });
+    $("#show").click(function(){
+        $("p").show(1000);
+    });
+});
+</script>
+	<body>
+	<h3>
+		<STRONG> Web related tools that you like </STRONG> </br>
+    </h3>
+			<p> 
+				Una herramienta que me gusta para desarrollo web es firebase ya que es bastante util para proyectos escolares, y mas para poder     conectar tus aplicaciones web con tus aplicaciones móviles, creo que ya queda bastante claro que mi tópico favorito son las aplicaciones móviles en android, sin embargo también he trabajado un poco con aplicaciones web, en el cual he tenido que conectar la base de datos entre ambos, por lo cual ya tengo un poco de experiencia usando firebase. Bootstrap también me gusta mucho como framework, ya que me ayuda mucho a poder desarrollar mucho más rápido la página web.
+			</p>
+	<h3>
+		<STRONG> Web related tools that you do not like </STRONG></br>
+	</h3>
+			<p> 
+                Una herramienta que no me gusta es nodejs y ruby porque no se usarlas nada bien.
+			</p>
+
+    <h3>
+		<STRONG> Project that you are proud </STRONG></br>
+	</h3>
+		<p>
+                Un proyecto del cual me siento orgulloso es uno en donde me encargué de desarrollar una aplicación móvil que se conectara a la red neuronal del usuario para poder leer sus señales beta, gamma, theta, alpha y delta como un electroencefalograma para poder medir su nivel de concentración en todo momento, esto lo realicé en un startup en el que me vi involucrado por 2 años para realizar esta aplicación. Además, esta aplicación se utilizó para mover a un robot por medio de esta concentración, ya que se revisaba por medio de las señales hacia donde quería mover el robot el usuario, si a la derecha, adelante, atrás o a la izquierda.
+		</p>
+
+    <h3>
+		<STRONG> What do you wantt to learn in this class? </STRONG></br>
+	</h3>
+		<p>
+                Me gustaria aprender técnicas para mejorar mis habilidades en desarrollo web, ya que personalmente no creo tener muy buenas habilidades en ello, me gustaria mejorar mis habilidades en el diseño visual de la página, puesto que me gusta mucho la parte artística de la programación, además de poder conectar estas habilidades con mi pasión que es aplicaciones móviles en android.
+		</p>
+
+    <h3>
+		<STRONG> Topics what I am familiar with: </STRONG></br>
+	</h3>
+
+		  	<p>
+De los tópicos me siento muy familiarizado en xml, y en json. SIn embargo no me siento muy familiarizado en nada de frameworks, me siento regular en html y css. En backend me siento muy alejado, ya que llevo mucho tiempo sin hacer algo que involucre eso. De los servicios web solo me siento bien con cloud, lo demás la verdad no los conozco.</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+	</body>
+	
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCQy5WPgh5ae7WE_BgoEI3rhJkjygQLhps",
+    authDomain: "first-task-485b2.firebaseapp.com",
+    databaseURL: "https://first-task-485b2.firebaseio.com",
+    projectId: "first-task-485b2",
+    storageBucket: "",
+    messagingSenderId: "522389566180"
+  };
+  firebase.initializeApp(config);
+</script>
