@@ -17,9 +17,10 @@ $(document).ready(function(){
 });
 </script>
 	<body>
-	<h3>
-		<STRONG> Web related tools that you like </STRONG> </br>
-    </h3>
+	<h2>
+		<STRONG> Vladimir Rodriguez Bahena A01129975 </STRONG> </br>
+    </h2>
+    
 			<p> 
 				Una herramienta que me gusta para desarrollo web es firebase ya que es bastante util para proyectos escolares, y mas para poder     conectar tus aplicaciones web con tus aplicaciones móviles, creo que ya queda bastante claro que mi tópico favorito son las aplicaciones móviles en android, sin embargo también he trabajado un poco con aplicaciones web, en el cual he tenido que conectar la base de datos entre ambos, por lo cual ya tengo un poco de experiencia usando firebase. Bootstrap también me gusta mucho como framework, ya que me ayuda mucho a poder desarrollar mucho más rápido la página web.
 			</p>
