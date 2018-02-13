@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .text { 
+            font-size: xx-large;
+            padding-left: 10%;
+            padding-top: 3%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready( () => {
+            $("#get-btn").click( () => {
+                $.ajax({
+                    url: "https://api.myjson.com/bins/phq3p",
+                    method: "GET",
+                    dataType: "json",
+                    complete: (result, status) => {
+                        console.log("Status: ", status);
+                        console.log("Result: ", result);
+                        result.responseJSON.names.forEach(element => {
+                            console.log(element);
+                            $("#where").append("<p>" + element + "</p>" +  "<br>");
+                        });
+                    },
+                    error: (jqXHR, status, error) => {
+                        console.log("jqXHR: ", jqXHR);
+                        console.log("status: ", status);
+                        console.log("error", error);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="get-btn">GET JSON</button>
+    <div class="text">Team Members:</div>
+    <div class="text" id="where"></div>
+</body>
+</html>

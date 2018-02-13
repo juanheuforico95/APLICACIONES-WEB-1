@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PubNub</title>
+
+<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.20.0.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+function conectar() {
+
+
+    //Crear instancia de PubNub
+    pubnub = new PubNub({
+        publishKey : 'pub-c-80e50667-83cd-4295-85c8-580a8ebcc679',
+        subscribeKey : 'sub-c-3d1811e0-0178-11e8-bd8f-6ec1080ef9b6',
+
+    })
+
+
+
+    pubnub.addListener({
+        status: function(statusEvent) {
+            if (statusEvent.category === "PNConnectedCategory") {
+                console.log("conectado");
+
+            }
+        },
+        message: function(message) {
+            console.log("Mensaje", message.message);
+            document.write(message.message);
+            document.write("<br>");
+            //$("#Rx").html(message.message);
+          //  document.getElementByID('Rx').innerHTML+=message.message;
+
+        }
+    })
+
+
+
+
+    pubnub.subscribe({
+        channels: ['vlad'],
+       // withPresence: true
+    });
+
+
+};
+function publicarMensaje() {
+
+    var publishConfig = {
+        channel : "vlad",
+        message : "Mensaje desde otro lugar del mundo"
+    }
+    pubnub.publish(publishConfig, function(status, response) {
+        console.log("Desde publicarMensaje");
+        console.log(status, response);
+    })
+}
+
+
+//$("#submit_comment").click(conectar());
+
+
+
+</script>
+</head>
+<body>
+<input type="submit" id="submit_comment">
+<label id="Rx"></label>
+
+
+</body>
+
+</html>
+<script type="text/javascript">
+
+
+$("#submit_comment").click(conectar());
+
+    </script>
+

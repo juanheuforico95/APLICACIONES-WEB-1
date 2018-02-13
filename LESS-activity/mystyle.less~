@@ -1,0 +1,21 @@
+.mymixin(@param1: 5px, @param2: solid) {
+    border-style: @param2;
+    border-radius: @param1;
+}
+
+.inline-width(@width: 50px) {
+    width: @width;
+    display: inline-block;
+}
+
+#divBold {  
+    width: 50px;
+    .mymixin();
+    .inline-width(100px);
+}
+
+#divDotted {
+    width: 100px;
+    .mymixin(5px, dotted);
+    .inline-width()
+}

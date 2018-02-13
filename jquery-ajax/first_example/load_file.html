@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Load File</title>
+    <style>
+        .text {
+            font-size: xx-large;
+            padding-left: 10%;
+            padding-top: 3%;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready( () => {
+            $("#load-btn").click( () => {
+                // The load() method loads data from a server or local directory and puts the returned data into the selected element.
+                // $(selector).load(url,data,function(response,status,xhr))
+                $("#where").load("my_text_file.txt", (response, status, xhr) => {
+                    console.log("Response: ", response);
+                    console.log("Status: ", status);
+                    console.log("XHR (XMLHttpRequest): ", xhr);
+                });
+                setTimeout(() => {
+                    $("#when").load("my_second_file.txt");
+                }, 3000);
+            });
+        });
+        
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Load File</h1>
+    <button id="load-btn">Click me for the loads</button>
+    <div class="text" id="where"></div>
+    <div class="text" id="when"></div>
+</body>
+</html>
